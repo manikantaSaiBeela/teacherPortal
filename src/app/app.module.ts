@@ -7,6 +7,7 @@ import { LayoutComponent } from './components/layout/layout.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HomeComponent } from './components/home/home.component';
+import { StaticdataService } from './services/staticdata.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { HomeComponent } from './components/home/home.component';
     BrowserAnimationsModule,
     FlexLayoutModule
   ],
-  providers: [],
+  providers: [StaticdataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
