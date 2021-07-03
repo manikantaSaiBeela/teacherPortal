@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { StaticdataService } from 'src/app/services/staticdata.service';
+
 
 @Component({
   selector: 'app-layout',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LayoutComponent implements OnInit {
 
-  constructor() { }
+  constructor(public staticData: StaticdataService) { }
 
   ngOnInit(): void {
+
+    console.log(this.staticData.data);
+
   }
 
 }
